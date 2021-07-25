@@ -3,8 +3,11 @@ var fs = require("fs");
 var url = require("url");
 var input = require('prompt-sync')();
 
-var user = input("enter email target: ");
-var count = input("enter your count: ");
+var user = input("อีเมลล์เป้าหมาย : ");
+
+var sub = input("ใส่หัวข้อ: ");
+var text = input("ใส่ข้อความ : ");
+var count = input("ใส่จำนวนส่ง: ");
 
 
 /*http.createServer(function (req,res) {
@@ -36,8 +39,8 @@ var transporter = nodemailer.createTransport({
 var mailOptions = {
   from: 'hackerdog555@gmail.com',
   to: user,
-  subject: 'KUY',
-  text: 'spammer time hahaha'
+  subject: 'sub,
+  text: text
 };
 
 
