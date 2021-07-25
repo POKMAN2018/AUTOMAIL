@@ -39,7 +39,7 @@ var transporter = nodemailer.createTransport({
 var mailOptions = {
   from: 'hackerdog555@gmail.com',
   to: user,
-  subject: 'sub,
+  subject: sub,
   text: text
 };
 
